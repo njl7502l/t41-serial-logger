@@ -22,7 +22,7 @@ jobs:
         uses: arduino/compile-sketches@v1
         with:
           fqbn: ${{matrix.board.vendor}}:${{matrix.board.arch}}:${{matrix.board.name}}
-          platforms: |
+          platforms: |-
             - source-url: ${{matrix.index}}
-            name: ${{matrix.board.vendor}}:${{matrix.board.arch}}
+              name: ${{matrix.board.vendor}}:${{matrix.board.arch}}
           sketch-paths: "./"
