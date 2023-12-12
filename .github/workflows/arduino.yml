@@ -26,3 +26,4 @@ jobs:
             - source-url: ${{matrix.index}}
               name: ${{matrix.board.vendor}}:${{matrix.board.arch}}
           sketch-paths: "./"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
