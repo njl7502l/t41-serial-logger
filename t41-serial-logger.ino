@@ -14,6 +14,8 @@ USBSerial_BigBuffer userial(myusb, 1);
 SdFs sd;
 FsFile file;
 
+int hoge;
+
 /// @brief SDカードに書き込み
 /// @param message 配列として定義したバイト列
 /// @param n 配列の長さ
