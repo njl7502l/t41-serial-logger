@@ -5,10 +5,11 @@
 // Use Teensy SDIO
 #define SD_CONFIG SdioConfig(FIFO_SDIO)
 
+/// @brief ボーレート
 uint32_t baud = USBBAUD;
-uint32_t format = USBHOST_SERIAL_8N1;
-USBHost myusb;
-// USBSerial userial(myusb);
+
+asd
+    USBHost myusb;
 USBSerial_BigBuffer userial(myusb, 1);
 
 SdFs sd;
@@ -48,7 +49,7 @@ void setup() {
     userial.begin(baud);
 }
 
-// String incomingByte;
+/// @brief USBホスト受信バッファ
 char buffer[4096];
 uint16_t n, rd;
 void loop() {
