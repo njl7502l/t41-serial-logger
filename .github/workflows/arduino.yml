@@ -27,3 +27,4 @@ jobs:
               name: ${{matrix.board.vendor}}:${{matrix.board.arch}}
           sketch-paths: "./"
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          enable-deltas-report: true
