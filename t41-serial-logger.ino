@@ -8,8 +8,7 @@
 /// @brief ボーレート
 uint32_t baud = USBBAUD;
 
-asd
-    USBHost myusb;
+USBHost myusb;
 USBSerial_BigBuffer userial(myusb, 1);
 
 SdFs sd;
